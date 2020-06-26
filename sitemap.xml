@@ -33,7 +33,6 @@
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/editor-usage/4-step-dropdown</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/editor-usage/5-add-comment</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/editor-usage/6-step-dragndrop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://webmethods.io/webmethods-io-flowservice/editor-usage/7-keyboard-shortcuts</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/error-handling/1_handle-error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/error-handling/2_throw-error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/error-handling/3_exit-flow</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -59,5 +58,6 @@
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/schedule/1_schedule_once</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/schedule/2_schedule_recurring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/simple-flowservice/add-services</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://webmethods.io/webmethods-io-flowservice/editor-usage/7-keyboard-shortcuts</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://webmethods.io/webmethods-io-flowservice/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
