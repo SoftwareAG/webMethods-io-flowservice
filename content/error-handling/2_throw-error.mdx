@@ -1,0 +1,18 @@
+---
+title: "How to throw an error ?"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+import flowJSONThrowError from '../assets/error-handling/throw-error/flow.json'
+
+Throw error step explicitly throws an exception with a custom error message.
+
+<FlowService
+title="Add two integers"
+description="Add two integers if they are not null, throw an error otherwise"
+textToCopy={flowJSONThrowError}>
+  <FlowStep comment="If num1 and num2 is not null" img="error-handling/throw-error/if-not-null-step.png"/>
+  <FlowStep comment="Add num1 and num2" img="error-handling/throw-error/add-ints.png"/>
+  <FlowStep comment="If num1 or num2 is null" img="error-handling/throw-error/else.png"/>
+  <FlowStep comment="Throw an error with the message" img="error-handling/throw-error/throw-error.png"/>
+</FlowService>

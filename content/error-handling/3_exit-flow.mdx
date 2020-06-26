@@ -1,0 +1,22 @@
+---
+title: "How to exit FlowService on success or failure ?"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+import flowJSONExitFlow from '../assets/error-handling/exit-flow/flow.json'
+
+The Exit step exits the entire FlowService and signals success or failure as part of the exit.
+
+<FlowService
+title="FTP CSV to Salesforce Account"
+description="Create Salesforce Account from csv file from FTP"
+textToCopy={flowJSONExitFlow}>
+  <FlowStep comment="Get file from FTP" img="error-handling/exit-flow/get-file-ftp.png"/>
+  <FlowStep comment="Convert output stream from FTP to document" img="error-handling/exit-flow/data-stream-to-document.png"/>
+  <FlowStep comment="Create Salesforce account from that document" img="error-handling/exit-flow/create-salesforce-account.png"/>
+  <FlowStep comment="If Create Account gives result as null" img="error-handling/exit-flow/if-response-null.png"/>
+  <FlowStep comment="Exit the FlowService with failure message" img="error-handling/exit-flow/exit-with-failure-message.png"/>
+  <FlowStep comment="If the result is not null" img="error-handling/exit-flow/else-step.png"/>
+  <FlowStep comment="Log the message" img="error-handling/exit-flow/log-custom-message.png"/>
+  <FlowStep comment="Exit the FlowService with success" img="error-handling/exit-flow/exit-with-success.png"/>
+</FlowService>

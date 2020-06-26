@@ -1,0 +1,26 @@
+[
+    {
+        "label": "Math",
+        "type": "INVOKE",
+        "name": "",
+        "comment": "",
+        "node_hints": {
+            "name": null,
+            "itemType": "SERVICES",
+            "serviceInfo": {
+                "groupDisplayName": "Math",
+                "groupName": "math",
+                "services": null
+            },
+            "serviceName": {
+                "transformerSupport": "true",
+                "displayName": "addInts",
+                "serviceName": "pub.math:addInts"
+            },
+            "outputMapSet": null,
+            "mapSet": null
+        },
+        "service": "pub.math:addInts",
+        "nodes": []
+    }
+]

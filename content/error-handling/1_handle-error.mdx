@@ -1,0 +1,21 @@
+---
+title: "How to handle an error ?"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+import flowJSONHandleError from '../assets/error-handling/handle-error/flow.json'
+
+Try step contains the sequence of flow steps that you want to attempt, and for which you want to provide failure handling by using a Catch step and cleanup work by using a Finally step.
+
+<FlowService
+title="FTP to Google Drive"
+description="Move file from FTP server to Google Drive"
+textToCopy={flowJSONHandleError}>
+  <FlowStep comment="Add Steps which can fail inside try" img="error-handling/handle-error/try.png"/>
+  <FlowStep comment="Get file from FTP" img="error-handling/handle-error/get-file-from-ftp.png"/>
+  <FlowStep comment="Upload the output file to Google Drive" img="error-handling/handle-error/upload-to-gdrive.png"/>
+  <FlowStep comment="Catch an exception" img="error-handling/handle-error/catch.png"/>
+  <FlowStep comment="Get the error message if exception is thrown" img="error-handling/handle-error/get-last-error.png"/>
+  <FlowStep comment="Perform operations after try block is executed" img="error-handling/handle-error/finally.png"/>
+  <FlowStep comment="Delete the file from FTP" img="error-handling/handle-error/delete-from-ftp.png"/>
+</FlowService>

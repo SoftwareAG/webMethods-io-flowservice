@@ -1,0 +1,35 @@
+---
+title: "Frequently Asked Questions"
+---
+
+1. **Where can I find the help documentation w.r.t FlowServices ? ** <br/>
+    Please check it [here](https://docs.webmethods.io/integration/developer_guide/flowservices/#co-flowservices)
+
+2. **Which version of webMethods.io Integration has support for FlowServices Editor? ** <br/>
+   FlowServices editor is supported from webMethods.io Integration version 2.1 onwards.
+
+3. ** Why am not able to execute the Flow sample after copy pasting the steps in FlowServices Editor ? ** <br/>
+    The Flow sample that has been copied, may have steps configured with connectors.
+    You have to configure the connection for every connector step.
+    Click on the user icon in the step and in the dropdown that appears click on **Configure Accounts**.
+    In the dialog that pops up, enter valid details specific to the connector and save the connection.
+    Also ensure you have defined the input/output for the FlowService as mentioned in the example.
+    Now you will be able to execute the FlowService.
+
+4. **How to get the details of an error (if any) in a FlowService ? ** <br/>
+     This can be achieved through the service **getLastError** under **Flow** category. Please check an example [here](/error-handling/1_handle-error).
+
+5. **I have migrated my existing integrations as FlowServices. Will I be able to restore a previous version of integration ? ** <br/>
+    No. When the integration is migrated into FlowServices, we will not be able to either view or restore the versions associated with the integration in version history.
+    However user can view or restore any version in the migrated FlowService.( versions updated after migration)
+
+6. **Whom should I contact for my queries on FlowServices ?** <br/>
+    You may post your queries in [Software AG TechCommunity](https://tech.forums.softwareag.com/tag/Integration-and-ESB).
+
+
+
+
+
+
+**Note:** *This site is best viewed in Chrome browser. Zoom ratio as 100%. If you're a windows user, Scale layout under display settings should be 100%.*
+

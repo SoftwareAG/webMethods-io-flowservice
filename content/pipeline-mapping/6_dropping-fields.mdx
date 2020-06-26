@@ -1,0 +1,14 @@
+---
+title: "Dropping Fields from Pipeline"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+The selected fields can be dropped from the pipeline.
+
+If any output field is dropped, then that particular field is not flown as input to the next step.
+This way, user can restrict the flow of fields from one step to another.
+
+![dropping fields](../assets/pipeline/dropping/dropping.gif)
+
+In the above example, since **_num1_** and **_num2_** are dropped in step 1, all the other are flow to the step2 as input, except these two fields.
+

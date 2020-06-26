@@ -1,0 +1,164 @@
+[
+    {
+        "label": "Math",
+        "type": "INVOKE",
+        "name": "",
+        "comment": "",
+        "node_hints": {
+            "name": null,
+            "itemType": "SERVICES",
+            "serviceInfo": {
+                "groupDisplayName": "Math",
+                "groupName": "math",
+                "services": null
+            },
+            "serviceName": {
+                "transformerSupport": "true",
+                "displayName": "addInts",
+                "serviceName": "pub.math:addInts"
+            },
+            "outputMapSet": null,
+            "mapSet": [
+                {
+                    "field": "/num1;1;0",
+                    "value": "2",
+                    "variableSubstitution": false
+                },
+                {
+                    "field": "/num2;1;0",
+                    "value": "5",
+                    "variableSubstitution": false
+                }
+            ],
+            "ui_step_index": 1,
+            "nodeIndex": 0
+        },
+        "service": "pub.math:addInts",
+        "nodes": [
+            {
+                "comment": "",
+                "label": null,
+                "mode": "INPUT",
+                "nodes": [],
+                "source": [],
+                "target": [
+                    {
+                        "field_dim": "0",
+                        "field_name": "num1",
+                        "field_opt": null,
+                        "field_type": "string",
+                        "field_xmlns": null,
+                        "form_qualified": "false",
+                        "is_global": "false",
+                        "is_public": "false",
+                        "nillable": "true",
+                        "node_subtype": "unknown",
+                        "node_type": "field",
+                        "wrapper_type": null,
+                        "flowPath": "/num1;1;0",
+                        "xpath": "/num1",
+                        "areaId": "SI",
+                        "state": {
+                            "open": false
+                        },
+                        "index": 0,
+                        "parentIndex": null,
+                        "visibility": true,
+                        "visible": true,
+                        "path": "num1",
+                        "value": "2",
+                        "setId": "B4486281784145"
+                    },
+                    {
+                        "field_dim": "0",
+                        "field_name": "num2",
+                        "field_opt": null,
+                        "field_type": "string",
+                        "field_xmlns": null,
+                        "form_qualified": "false",
+                        "is_global": "false",
+                        "is_public": "false",
+                        "nillable": "true",
+                        "node_subtype": "unknown",
+                        "node_type": "field",
+                        "wrapper_type": null,
+                        "flowPath": "/num2;1;0",
+                        "xpath": "/num2",
+                        "areaId": "SI",
+                        "state": {
+                            "open": false
+                        },
+                        "index": 1,
+                        "parentIndex": null,
+                        "visibility": true,
+                        "visible": true,
+                        "path": "num2",
+                        "value": "5",
+                        "setId": "C6276171990309"
+                    }
+                ],
+                "type": "MAP"
+            },
+            {
+                "comment": "",
+                "label": null,
+                "mode": "OUTPUT",
+                "nodes": [],
+                "source": [
+                    {
+                        "field_dim": "0",
+                        "field_name": "value",
+                        "field_opt": null,
+                        "field_type": "string",
+                        "field_xmlns": null,
+                        "form_qualified": "false",
+                        "is_global": "false",
+                        "is_public": "false",
+                        "nillable": "true",
+                        "node_subtype": "unknown",
+                        "node_type": "field",
+                        "wrapper_type": null,
+                        "flowPath": "/value;1;0",
+                        "xpath": "/value",
+                        "areaId": "SO",
+                        "state": {
+                            "open": false
+                        },
+                        "index": 0,
+                        "parentIndex": null,
+                        "visibility": true,
+                        "visible": true
+                    }
+                ],
+                "target": [
+                    {
+                        "field_dim": "0",
+                        "field_name": "value",
+                        "field_opt": null,
+                        "field_type": "string",
+                        "field_xmlns": null,
+                        "form_qualified": "false",
+                        "is_global": "false",
+                        "is_public": "false",
+                        "nillable": "true",
+                        "node_subtype": "unknown",
+                        "node_type": "field",
+                        "wrapper_type": null,
+                        "flowPath": "/value;1;0",
+                        "xpath": "/value",
+                        "areaId": "PO",
+                        "state": {
+                            "open": false
+                        },
+                        "index": 0,
+                        "parentIndex": null,
+                        "visibility": true,
+                        "visible": true
+                    }
+                ],
+                "type": "MAP"
+            }
+        ],
+        "nodeIndex": 0
+    }
+]

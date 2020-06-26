@@ -1,0 +1,47 @@
+---
+title: "Repeat execution for specific count"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+import repeatCount5JSON from '../assets/loop-constructs/data/repeat_count_5.json'
+import repeatDynamicCountJSON from '../assets/loop-constructs/data/repeat_count_dynamic.json'
+
+`Repeat for Count` specifies the maximum number of times FlowService re-executes the child steps in the Repeat step. 
+
+## Repeat for Count
+This control takes one input parameter:
+* Input field
+
+The **input field** can be a fixed/constant value or a field.  
+If the *count* is set to any value > 0, the `Repeat for Count` step re-executes the child steps up to this number of times.  
+
+Children of a Repeat step always execute at least once. The *count* property specifies the maximum number of times the children can be re-executed. The concept is the same as Repeat for each. The only difference here is that you iterate for a specific count. It can be specified directly on a step or through a variable (I/O or Pipeline).
+
+## How to give fixed/constant value?
+* Add `Repeat for Count` control and enter an **'integer'** as shown below:
+![Select constant value](../assets/loop-constructs/repeat_for_count_select_constant_value.gif)
+
+## How to use a field?
+* Add `Repeat for Count` control and click on the **input dropdown** to open the dropdown.
+* The dropdown shows a list of fields available. You can also add fields from [I/O panel](/define-io/1_adding_fields).
+* Click on one the values from dropdown to select a field.
+
+**Note**: Only fields with type **'String'** are supported for input field in `Repeat for Count`.
+
+## Know the number of re-executions
+This control uses a field **'$retries'** which contains the number of re-executions of its children steps.
+
+## Example 1: Repeat for a specific count 5
+<FlowService
+description="The above flow steps keeps appending a string for 6 times and prints it."
+textToCopy={repeatCount5JSON}>
+  <FlowStep comment="" img="loop-constructs/repeat_count.png"/>
+</FlowService>
+
+## Example 2: Repeat using a field
+
+<FlowService
+description="The above flow steps keeps appending a string for given times (count + 1) and prints it."
+textToCopy={repeatDynamicCountJSON}>
+  <FlowStep comment="" img="loop-constructs/repeat_count_1.png"/>
+</FlowService>

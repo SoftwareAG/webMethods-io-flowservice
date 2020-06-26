@@ -1,0 +1,33 @@
+---
+title: "Pipeline Mapping"
+
+---
+
+import flowStepJSON from './assets/pipeline/add-ints-step.json'
+
+Before looking in depth,lets get started with what actually Pipeline means
+
+# What is pipeline?
+
+The pipeline refers to the data structure in which input and output values are maintained for a FlowService.
+The pipeline starts with the input to the FlowService and collects inputs and outputs from subsequent Connectors and services in the FlowService.
+When an operation of a Connector or a FlowService executes, it has access to all data in the pipeline at that point.
+
+To open a pipeline panel, any operation of connector/service is to be selected and account to be configured (in case of connector).
+The FlowService would generate the fields based on the operation and the service. User can define IO fields and map them to the service's fields.
+
+lets take the usecase of **_adding integers_** using **_Math service._** This use case will be used to illustrate all features of pipeline further in this section.
+
+<FlowService
+title="Add flow step"
+description = " A flow step is created initially, without any data manipulation "
+textToCopy={flowStepJSON}>
+  <FlowStep comment="AddInts operation is chosen from Math service" img="pipeline/add-ints-step.png"/>
+</FlowService>
+
+Lets see each of its functionality in detail
+
+<Feature name="Pipeline Mapping"/>
+
+
+

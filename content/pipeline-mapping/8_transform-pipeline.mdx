@@ -1,0 +1,51 @@
+---
+title: "Transform Pipeline"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+
+## What is a Transformer?
+
+Transformers are services that are inserted into and executed within a Transform Pipeline step.
+We can use built-in service and connector(lookup tranformer) as a transformer.
+We can insert multiple transformers into a single Transform Pipeline step.
+By using multiple transformers, we can perform multiple data transformations on the pipeline contents in a single flow service step.
+
+## How Transform Pipeline is different from other steps ?
+
+Transformers act as collection of normal steps embedded in a single Transform Pipeline step.
+However, transformers in a Transform Pipeline step are independent of each other, do not execute in a specific order, and might not execute in the same order each time the normal step runs.
+Consequently, the output of one transformer cannot be used as the input to another transformer.
+Because transformers are contained within a Transform Pipeline step, they do not appear as a separate flow step in the editor.
+These characteristics make transformers different than a set of normal steps that execute sequentially in a flow service.
+
+## Why is Transform Pipeline required?
+
+The purpose of transformers is to accomplish multiple data transformations on the pipeline data in a single step as opposed to using succession of normal steps.
+As a result, transformers are well suited to use when mapping data from one document format to another. When mapping data between formats, we often need to perform several name, structure, and value transformations. With the use of transformers, the
+flow service in which we map data between formats could potentially consist of a single Transform Pipeline step in where transformers and links between variables handle all of the data transformations. This provides a single view of document-to-document mapping.
+
+## How to insert a Transform Pipeline step in a flow service ?
+
+Search for 'Transform Pipeline' in the empty step of flow service and select the Transform Pipeline step filtered from step dropdown.
+![Insert transform Step](../assets/pipeline/transform-pipeline/insert-transform-pipeline-step.gif)
+
+## How to add Transformer?
+Let us see an example of adding a built-in service.
+![adding transformer](../assets/pipeline/transform-pipeline/adding-transformer.gif)
+
+## How to map Pipeline variables to Transformer variables?
+The pipeline variables can be mapped to the service variables of the transformer(s) added.
+![Mapping](../assets/pipeline/transform-pipeline/mapping.gif)
+
+## How to do a Direct Mapping?
+The pipeline input variables can be directly mapped to any of the pipeline output variables.
+![Direct Mapping](../assets/pipeline/transform-pipeline/direct-mapping.gif)
+
+**_Note_**
+1. At a time, only one transformer can be expanded. On collapsing , all the existing transformers are visible.
+2. Transformer can be deleted using the _delete_ icon against each transformer. If a tranformer is deleted, the mappings made to its service variables will also be deleted.
+
+
+
+

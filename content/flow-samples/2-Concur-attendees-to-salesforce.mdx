@@ -1,0 +1,24 @@
+---
+title: "Get attendees from Concur and add them as contacts to Salesforce based on condition"
+metaTitle: "Get attendees from Concur and add them as contacts to Salesforce based on condition"
+metaDescription: "Get attendees from Concur and add them as contacts to Salesforce based on condition"
+---
+import concurjson from '../assets/flow-samples/data/getAttendeesConcur.json'
+
+<FlowService
+title=""
+description="" textToCopy={concurjson}>
+  <FlowStep comment="Name and description of your flowservice" img="flow-samples/concurtosf/concurtosalesforce_01.png"/>
+  <FlowStep comment="" img="flow-samples/concurtosf/concurtosalesforce_02.png"/>
+  <FlowStep comment="Handle exception in the flowservice" img="flow-samples/concurtosf/concurtosalesforce_03.png"/>
+  <FlowStep comment="Get Attendees custom operation to fetch attendees from Concur" img="flow-samples/concurtosf/concurtosalesforce_04.png"/>
+  <FlowStep comment="Loop over the attendees list" img="flow-samples/concurtosf/concurtosalesforce_05.png"/>
+  <FlowStep comment="Set a condition based on requirement" img="flow-samples/concurtosf/concurtosalesforce_06.png"/>
+  <FlowStep comment="create contact in salesforce" img="flow-samples/concurtosf/concurtosalesforce_07.png"/>
+  <FlowStep comment="" img="flow-samples/concurtosf/concurtosalesforce_08.png"/>
+  <FlowStep comment="Catch block for exception handling" img="flow-samples/concurtosf/concurtosalesforce_09.png"/>
+  <FlowStep comment="Get the last error (if any)" img="flow-samples/concurtosf/concurtosalesforce_10.png"/>
+  <FlowStep comment="" img="flow-samples/concurtosf/concurtosalesforce_11.png"/>
+
+
+</FlowService>

@@ -1,0 +1,21 @@
+[
+  {
+    "label": "Date",
+    "type": "INVOKE",
+    "name": "",
+    "service": "pub.date:getCurrentDate",
+    "nodes": [],
+    "node_hints": {
+      "name": null,
+      "itemType": "SERVICES",
+      "serviceInfo": { "groupDisplayName": "Date", "groupName": "date", "services": null },
+      "serviceName": {
+        "displayName": "getCurrentDate",
+        "serviceName": "pub.date:getCurrentDate",
+        "transformerSupport": "true"
+      }
+    },
+    "nodeIndex": 1,
+    "node-index": "0"
+  }
+]

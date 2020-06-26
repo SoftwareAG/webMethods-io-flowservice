@@ -1,0 +1,33 @@
+---
+title: "Toolbar"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+Each icon in the toolbar and their actions are defined in the following.
+<FlowService>
+
+<FlowStep comment="Shows only the mapped nodes" img="pipeline/toolbar/show-only-mapped-new.png"/>
+<FlowStep comment="Copies a selected node" img="pipeline/toolbar/copy-new.png"/>
+<FlowStep comment="Clears all the manual mappings" img="pipeline/toolbar/clear-all-new.png"/>
+<FlowStep comment="Deletes the selected link/mapping " img="pipeline/toolbar/delete-mapping-new.png"/>
+<FlowStep comment="moves the selected node" img="pipeline/toolbar/move-new.png"/>
+<FlowStep comment="link/map the nodes selected" img="pipeline/toolbar/link-new.png"/>
+<FlowStep comment="allows to set value for a node " img="pipeline/toolbar/set-value-new.png"/>
+<FlowStep comment="drop the selected node from pipeline" img="pipeline/toolbar/drop-field-new.png"/>
+<FlowStep comment="toggles fullscreen" img="pipeline/toolbar/full-screen-new.png"/>
+<FlowStep comment="closes the pipeline panel" img="pipeline/toolbar/close-new.png"/>
+
+</FlowService>
+
+## Validations for each action
+
+Action | Validation | Keyboard shortcut
+--- | --- | ---
+**Copy Node** | Enabled only when a node is selected |`Ctrl + C`
+**Clear All** | Enabled always. If there are any mappings made manually, all those will be removed. | 
+**Delete** | Enabled if a particular mapping is selected by clicking on the mapping line. | `Delete`
+**Move Left** | Enabled if a node is selected and when there is a possibility to move to the immediate parental hierarchy (if any) | -
+**Move Right** |  Enabled if a node is selected and when there is a possibility to move to the immediate down level hierarchy (if any) | -
+**Move up** | Enabled if a node is selected and when there is a possibility to move one level above its sibling node | -
+**Move down** |  Enabled if a node is selected and when there is a possibility to move one level down to its sibling node  | -
+**close** | Always enabled. Whatever the state of mappings/data manipulations done till that point will be saved. | `Esc`

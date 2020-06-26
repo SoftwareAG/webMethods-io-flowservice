@@ -1,0 +1,34 @@
+---
+title: "Iterating with While"
+metaTitle: "Syntax Highlighting is the meta title tag for this page"
+metaDescription: "This is the meta description for this page"
+---
+import whileJSON from '../assets/loop-constructs/data/while.json'
+
+While loop is used to iterate a part of the program several times. If the number of iterations are not fixed, it is recommended to use the While loop.
+
+## Example overview - Print 'Hello world'
+<FlowService
+title="Print 'Hello world' a given number of times with while"
+description="The above flow steps keeps appending a string while the value of x is less than 5 and keeps incrementing that value at each iteration and finally prints it."
+textToCopy={whileJSON}>
+  <FlowStep comment="" img="loop-constructs/while_1.png"/>
+</FlowService>
+
+## Example description - Print 'Hello world'
+1) Add inputs as shown below:
+![Add inputs](../assets/loop-constructs/while_input.png)
+
+2) Add a `While` step and add condition as shown:
+
+![Add condition](../assets/loop-constructs/while_condition.gif)
+
+## Code snippet:
+```
+  String output = "";
+  while (x  < 5) {
+    output = output.concat("---Hello World---");
+    x++;
+  }
+  System.out.println(output);
+```
