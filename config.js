@@ -77,7 +77,7 @@ const config = {
     title: 'webMethods.io | FlowService Editor',
     description: 'Documentation for FlowService Editor ',
     ogImage: null,
-    docsLocation: '',
+    docsLocation: 'https://github.com/SoftwareAG/webmethods-io-flowservice/tree/master/content',
     favicon: 'https://www.softwareag.cloud/favicon.ico',
   },
   pwa: {
