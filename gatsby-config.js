@@ -128,6 +128,17 @@ const plugins = [
       })
       ,
     },
+  },
+  {
+    resolve: `gatsby-plugin-gdpr-cookies`,
+    options: {
+      facebookPixel: {
+        pixelId: '757069165097356',
+        cookieName: 'gatsby-gdpr-facebook-pixel',
+      },
+      // defines the environments where the tracking should be available  - default is ["production"]
+      environments: ['production', 'development']
+    },
   }
 ];
 
